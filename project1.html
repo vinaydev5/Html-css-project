@@ -1,0 +1,1015 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script
+    src="https://kit.fontawesome.com/7f1a9230de.js"
+    crossorigin="anonymous"></script>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            font-family: "Raleway", sans-serif;
+            box-sizing: border-box;
+        }
+
+        .navbar-container {
+            display: flex;
+            justify-content: center;
+            height: 14vh;
+            /* border: 2px solid; */
+        }
+
+        .navbar {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            flex-wrap: nowrap;
+            height: 100%;
+            width: 75%;
+            /* background-color: red; */
+        }
+
+        img {
+            height: 160.5%;
+        }
+
+        .navigation-titles {
+            /* background-color: yellow; */
+            width: 40vw;
+        }
+
+        .navigation-titles a {
+            font-size: 15px;
+            text-decoration: none;
+            margin-left: 2.6rem;
+            color: #121212;
+        }
+
+        .navigation-titles a:hover {
+            color: #3b3bff;
+        }
+
+        .picture {
+
+            height: 100vh;
+            width: 100%;
+            background-image: url(./main_banner.jpg);
+            background-size: 100% 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+
+        .matter {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+
+        button {
+            width: 25%;
+            height: 45px;
+            background-color: blue;
+            color: white;
+        }
+
+        .search-form {
+            display: flex;
+            gap: 10px;
+            margin: bottom 20px;
+        }
+
+        .search-form input,
+        .search-form select {
+            padding: 10px;
+            border: 1px solid white;
+            border-radius: 5px;
+            width: 100%;
+        }
+
+        .search-form button {
+            background-color: blue;
+            color: white;
+            border: none;
+            padding: 10px;
+            border-radius: 5px;
+            cursor: pointer;
+            flex-shrink: 0;
+        }
+
+        .search-form button:hover {
+            background-color: transparent;
+            letter-spacing: 0.1px;
+            color: black;
+            transition: all 0.5s;
+
+        }
+
+        .bar {
+            background-color: aliceblue;
+            display: flex;
+            padding: 10px;
+            margin-top: 300px;
+            margin-bottom: -200px;
+        }
+
+        .popular-places {
+        margin-top: 100px;
+        }
+       
+        .popular-places p{
+         color: #0519f5;
+         margin: 0;  
+         text-align: center; 
+         letter-spacing: 0.8px;    
+        }
+
+        .popular-places h2{
+         font-size: 20px;
+         margin: 10px 0;
+         text-align: center;
+         letter-spacing: 1px;
+        }
+        
+
+.carousel {
+    position: relative;
+    max-width: 800px;
+    margin: auto;
+}
+
+.slides {
+    display: flex;
+    overflow: hidden;
+}
+
+.slide {
+    min-width: 50%;
+    box-sizing: border-box;
+    text-align: center;
+    position: relative;
+}
+
+.slide img {
+    width: 50%;
+    height: auto;
+}
+
+.caption {
+    position: absolute;
+    bottom: 50px;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    font-size: 18px;
+    color: white;
+}
+
+.listings {
+    position: absolute;
+    bottom: 30px;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    font-size: 14px;
+    color: white;
+}
+
+.dots {
+    text-align: center;
+    padding: 10px 0;
+    background:white;
+}
+
+.dot {
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition:0.6s ease;
+
+}
+
+.active, .dot:hover {
+    background-color:blue;
+}
+.featured-places {
+        margin-top: 100px;
+        }
+       
+.featured-places
+    p{
+         color: #0519f5;
+         margin: 0;  
+         text-align: center;
+         letter-spacing: 0.8px;    
+        }
+
+.featured-places 
+    h2{
+         font-size: 20px;
+         margin: 10px 0;
+         text-align: center;
+         letter-spacing: 1px;
+        }
+
+.card1 {
+    width: 400px;
+    background: #fff;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    border-radius: 10px;
+    overflow: hidden;
+    position: relative;
+    
+}
+
+.card-header1 {
+    display: flex;
+    justify-content:space-between;
+    padding: 10px;
+}
+
+
+
+
+.img1{
+
+    position: relative;
+}
+.inside1{
+
+    position: absolute;
+    color: #fff;
+    padding: 10px;
+}
+
+
+
+
+
+.date1 {
+    text-align: center;
+    color: rgb(6, 14, 251);
+    background: whitesmoke;
+    padding: 5px;
+    border-radius: 5px;
+    font-size: 10px;
+    position: absolute;
+    right: 10px;
+    top: 30px;
+    
+}
+
+.card1 img {
+    width: 100%;
+    height: auto;
+
+}
+
+.card-body1 {
+    padding: 15px;
+}
+
+.card-body1 h2 {
+    font-size: 20px;
+    margin: 0;
+}
+
+.category1 {
+    color: blue;
+    margin: 5px 0;
+}
+
+.card-body1 p {
+    font-size: 14px;
+    color: #666;
+}
+
+.favorite-btn1, .read-btn1 {
+    display:block;
+    width: 100%;
+    padding: 10px;
+    margin-top: 10px;
+    border: none;
+    background:transparent;
+    color:blue;
+    font-size: 14px;
+    cursor: pointer;
+    border-radius: 5px;
+    text-align: center; 
+    
+;
+}
+
+.read-btn1 {
+    background: grey;
+    color: #fff;
+}
+
+.favorite-btn1.hover, .read-btn1:hover {
+    opacity: 0.8;
+    background-color: #3b3bff
+    
+}
+  .cards{
+  display: flex;
+  /* flex-direction: column;  */
+  gap: 50px;
+  margin-left: 110px;
+  margin-top: 50px;
+  margin-bottom: 10%;
+  }
+ 
+.Our-services {
+        margin-top: 100px;
+        }
+       
+.Our-services
+    p{
+         color: #0519f5;
+         margin: 0px;
+         text-align: center;
+         letter-spacing: 0.8px;    
+        }
+
+.Our-services 
+    h2{
+         font-size: 20px;
+         margin: 10px 0;
+         text-align: center;
+         letter-spacing: 1px;
+        }
+
+ .High{
+   border:solid lightgrey 1px;
+   border-radius: 20px;
+   text-align: center;
+   padding: 50px;
+ }
+
+ .Fully{
+    border:solid lightgrey 1px;
+   border-radius: 20px;
+   text-align: center;
+   padding: 50px;
+
+ }
+ .Best{
+    border:solid lightgrey 1px;
+   border-radius: 20px;
+   text-align: center;
+    padding: 50px; 
+ }
+
+ .color-buttons {
+  display: flex;
+  gap:50px;
+  padding: 50px;
+
+}
+
+ .High1{
+  height: 50px;
+  width: 50px;
+
+ }
+.Fully1{
+    height: 50px;
+    width: 50px;
+}
+.Best1{
+  height: 50px;
+  width: 50px;
+}
+
+.container {
+    display: flex;
+    width: 80%;
+    background-color: #ffffff;
+    padding: 3%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+   margin-top: 5%;
+   margin-left: 10%;
+   margin-bottom: 5%;
+}
+
+.left-content {
+    flex: 2;
+    padding-right: 10px;
+    ;
+}
+
+.left-content h2 {
+    margin-top: 0;
+}
+
+.left-content p {
+    color: #555555;
+    padding-right: 50%;
+}
+
+.left-content button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition:0.3s;
+
+}
+
+.left-content button:hover {
+    background-color: #0056b3;
+}
+
+.right-content {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.right-content ul {
+    list-style-type: none;
+    padding: 0%;
+}
+
+.right-content li {
+    background-color: #f0f0f0;
+    margin-bottom: 10px;
+    padding: 4%;
+    border-radius: 5px;
+}
+.video-container {
+    position: relative;
+    width: 100%;
+    height: 90vh;
+    overflow: hidden;
+;
+    
+}
+
+.background-video {
+    position: absolute;
+    top:50%;
+    left: 50%;
+    width: 100%;
+    height: 100%;
+  
+    object-fit: cover;
+    transform: translate(-50%, -70%);   
+    background: rgba(0, 0, 0, 0.5);
+}
+
+.video-overlay {
+    position: absolute;
+    top:46.9px;
+    left: 0;
+    bottom: 100%;
+    width: 100%;
+    height: 70%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background:rgba(0, 0, 0, 0.5);
+    
+} 
+    
+
+
+.text {
+    text-align: center;
+    color: white;
+}
+
+.play-button {
+    font-size: 2rem;
+    background: none;
+    border: none;
+    color: white;
+    cursor: pointer;
+    
+}
+
+.Pricing-tables {
+        margin-top: 100px;
+
+        }
+       
+.Pricing-tables
+    p{
+         color: #0519f5;
+         margin: 20px;
+         text-align: center;
+         letter-spacing: 0.8px;    
+        }
+
+.Pricing-tables
+
+    h2{
+         font-size: 21.6px;
+         margin: 10px 0;
+         text-align: center;
+         letter-spacing: 1px;
+        }
+.pricing-table {
+    display: flex;
+    justify-content: space-around;
+    width: 80%;
+    padding:5%;
+    margin-left: 10%;
+    margin-bottom: 10%;
+}
+
+.pricing-card {
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    text-align: center;
+    width: 30%;
+}
+
+.pricing-card h3 {
+    background-color: #007bff;
+    color: #ffffff;
+    padding: 20px;
+    border-radius: 8px 8px 0 0;
+    margin: -20px -20px 20px -20px;
+}
+
+.price {
+    font-size: 24px;
+    color: #333333;
+}
+
+.price span {
+    font-size: 14px;
+    color: #999999;
+}
+
+.pricing-card ul {
+    list-style-type: none;
+    padding: 7px;
+    margin: 20px 0;
+}
+
+.pricing-card ul li {
+    margin: 10px 0;
+    color: #666666;
+}
+
+.pricing-card button {
+    background-color: #007bff;
+    color: #ffffff;
+    border: none;
+    padding: 0px 30px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.pricing-card button:hover {
+    background-color: #0056b3;
+}
+
+.contact{
+        margin-top: 100px;
+
+        }
+       
+.contact
+    p{
+         color: #0519f5;
+         margin: 20px;
+         text-align: center;
+         letter-spacing: 0.8px;    
+        }
+
+.contact
+   h2{
+         font-size: 21.6px;
+         margin: 10px 0;
+         text-align: center;
+         letter-spacing: 1px;
+        }
+    
+   .contact1{ 
+     margin-left: 45% ;
+     width: 10%;
+     margin-bottom: 10%;
+     
+   }
+ .contact1:hover{
+   background: transparent;
+   color: #3b3bff;
+   transition: 0.6s;   
+ }
+.footer{
+  display:flex;
+  border: solid gainsboro;
+  box-shadow: ghostwhite;
+ border-radius: 10px;
+ width: 100%;
+ height: 100%;
+ padding-top:5%;
+ padding-bottom: 5%;
+}
+ .v-imgtext{
+    padding: 15%;  
+    margin-left:-10%;
+    text-align:left;
+    margin-top: -15%;
+ 
+ }
+ .v-img{
+width: 1%;
+
+ }
+    
+.img-icons{
+ font-size:x-large;
+ margin-top: 15px;
+ letter-spacing: 3px;
+  
+}
+
+.img-icons:hover{
+
+background-color: #007bff ;
+ transition: 1.6s;
+}
+
+.bottom-text1{
+ color: #007bff;
+ padding: 5%;
+margin-top: -7%;
+}
+.footer1{
+ margin: 100px;
+ margin-left: 35%;
+ border: white;
+ box-shadow: #f0f0f0;
+ font-size: x-large;
+}
+
+
+
+
+
+
+    </style>
+    <title>Document</title>
+</head>
+
+<body>
+    <nav class="navbar-container">
+        <section class="navbar">
+            <img src="./logo.png" alt="">
+            <div class="navigation-titles">
+                <a href="">Popular</a>
+                <a href="">Most Visited</a>
+                <a href="">Blog Entries</a>
+                <a href="">Our Services</a>
+                <a href="">Contact Us</a>
+            </div>
+        </section>
+    </nav>
+    <div class="picture">
+        <div class="">
+
+        </div>
+        <div class="matter">
+            <h1 style="color: white;">BEST FINDER FOR YOU</h1>
+            <P style="color: white;">Suspendisse eu lorem massa. Integer sit amet posuere tellus.
+            </P>
+            <button>Discover more</button>
+            <div class="bar">
+                <form class="search-form">
+                    <input type="text" placeholder="your name" required>
+                    <input type="text" placeholder="type location" required>
+                    <select required>
+                        <option value="" disabled selected>select category..</option>
+                        <option value="category1">category 1</option>
+                        <option value="category2">category 2</option>
+                        <option value="category3">category 3</option>
+                    </select>
+
+
+                    <button type="submit">search now</button>
+
+
+                </form>
+
+            </div>
+        </div>
+    </div>
+    
+        <div class="popular-places">
+            <p>popular places</p>
+            <h2> Integer sapien odio </h2>
+        </div>
+            <div class="carousel">
+                <div class="slides">
+                    <div class="slide">
+                        <img src="img/popular_item_1.jpg" alt="Image 1">
+                        <div class="caption">Quisque sodales</div>
+                        <div class="listings">66 listings</div>
+                    </div>
+                    <div class="slide">
+                        <img src="img/popular_item_2.jpg" alt="Image 2">
+                        <div class="caption">Pellentesque</div>
+                        <div class="listings">85 listings</div>
+                    </div>
+                    <div class="slide">
+                        <img src="img/popular_item_3.jpg" alt="Image 3">
+                        <div class="caption">Commodo</div>
+                        <div class="listings">76 listings</div>
+                    </div>
+                
+                    <div class="slide">
+                        <img src="img/popular_item_4.jpg" alt="Image 4">
+                        <div class="caption">Suspendisse</div>
+                        <div class="listings">63 listings</div>
+                    </div>
+                
+                    <div class="slide">
+                        <img src="img/popular_item_5.jpg" alt="Image 4">
+                        <div class="caption">lorem ipsum</div>
+                        <div class="listings">86 listings</div>
+                    </div>
+            
+                </div>
+                <div class="dots">
+                    <span class="dot" onclick="currentSlide(1)"></span>
+                    <span class="dot" onclick="currentSlide(2)"></span>
+                    <span class="dot" onclick="currentSlide(3)"></span>
+                    <span class="dot" onclick="currentSlide(4)"></span>
+                    <span class="dot" onclick="currentSlide(5)"></span>
+                
+                </div>
+            </div>
+           
+            
+        <div class="featured-places">
+            <p>featured-places</p>
+            <h2> Praesent nec dui sed urna </h2>
+        </div>
+<div class="cards">
+            <div class="card1">
+                <div class="card-header1">
+                    
+                    <div class="date1">
+                        <span>28</span>
+                        <br>
+                        <span>AUGUST</span>
+                    </div>
+                </div>
+              <div class=".img1">
+                <div class="inside1"><span>★</span><span>★</span><span>★</span><span>★</span><span>★</span></div>
+                <img src="img/featured_item_1.jpg" alt="Image">
+            </div>
+                <div class="card-body1">
+                    <h2>Lorem ipsum dolor</h2>
+                    <p class="category1">Category One</p>
+                    <p>Vestibulum id est eu felis vulputate hendrerit. Suspendisse dapibus turpis in dui pulvinar imperdiet. Nunc consectetur.</p>
+                    <button class="favorite-btn1">Add to Favorites</button>
+                    <button class="read-btn1">Continue Reading</button>
+                </div>
+            </div>
+      
+            <div class="card1">
+                <div class="card-header1">
+                    <div class="date1">
+                        <span>28</span>
+                        <br>
+                        <span>AUGUST</span>
+                    </div>
+                </div>
+                <div class=".img1">
+                    <div class="inside1"><span>★</span><span>★</span><span>★</span><span>★</span><span>★</span></div>
+               
+                <img src="img/featured_item_2.jpg" alt="Image">
+                <div class="card-body1">
+                    <h2>Lorem ipsum dolor</h2>
+                    <p class="category1">Category One</p>
+                    <p>Vestibulum id est eu felis vulputate hendrerit. Suspendisse dapibus turpis in dui pulvinar imperdiet. Nunc consectetur.</p>
+                    <button class="favorite-btn1">Add to Favorites</button>
+                    <button class="read-btn1">Continue Reading</button>
+                </div>
+            </div>
+            </div>
+
+
+            <div class="card1">
+                <div class="card-header1">
+                    <div class="date1">
+                        <span>28</span>
+                        <br>
+                        <span>AUGUST</span>
+                    </div>
+                </div>
+                <div class=".img3">
+                    <div class="inside1"><span>★</span><span>★</span><span>★</span><span>★</span><span>★</span></div>
+               
+                <img src="img/featured_item_3.jpg" alt="Image">
+                <div class="card-body1">
+                    <h2>Lorem ipsum dolor</h2>
+                    <p class="category1">Category One</p>
+                    <p>Vestibulum id est eu felis vulputate hendrerit. Suspendisse dapibus turpis in dui pulvinar imperdiet. Nunc consectetur.</p>
+                    <button class="favorite-btn1">Add to Favorites</button>
+                    <button class="read-btn1">Continue Reading</button>
+                </div>
+            </div>
+            </div>
+            </div>
+
+            <div class="Our-services">
+                <p>Our-services</p>
+                <h2>Best Template Site </h2>
+            </div>
+      
+            <div class="color-buttons">
+                <div class="High">
+               <img class="High1" src="img/service_icon_1.png" alt="Image"><br>
+              <h2>High Quality Design</h2><br>
+              <P style="color: grey;">Etiam viverra nibh at lorem hendrerit porta non nec ligula. 
+                Donec hendrerit porttitor pretium. 
+                Suspendisse fermentum nec risus.</P>
+                </div>
+
+               <div class="Fully">
+              <img class="Fully1" src="img/service_icon_2.png" alt="Image"><br>
+               <h2>Fully Customizable</h2><br>
+               <p style="color: grey;">Vivamus nec vehicula felis, sit amet convallis ex.
+                  Aenean dolor risus, rutrum at tincidunt eget, 
+                      placerat ac mauris.</p>
+                    </div>
+
+                 <div class="Best">
+                  <img class="Best1" src="img/service_icon_3.png" alt="Image"><br>
+                  <h2>Best HTML CSS Layout</h2><br>
+                  <p style="color: grey;">Praesent nec dui sed urna pharetra dapibus at ac elit. 
+                    Aenean hendrerit metus leo,
+                     quis viverra purus condimentum nec.</p>
+                     </div>   
+                </div>
+                <hr>        
+            
+                    <div class="container">
+                        <div class="left-content">
+                            <h2>In hac habitasse platea dictumst</h2>
+                            <p>Aenean hendrerit metus leo, quis viverra purus condimentum nec. Pellentesque a sem semper, lobortis mauris non, varius urna. Quisque sodales purus eu tellus fringilla.</p>
+                            <p>Mauris sit amet quam congue, pulvinar urna et, congue diam. Suspendisse eu lorem massa. Integer sit amet posuere tellus, id efficitur leo. In hac habitasse platea dictumst.</p>
+                            <button>Discover More</button>
+                        </div>
+                        <div class="right-content">
+                            <ul>
+                                <li>Ut in dapibus ipsum</li>
+                                <li>Vivamus ligula metus</li>
+                                <li>Suspendisse dapibus</li>
+                            </ul>
+                        </div>
+                    </div>
+                
+                        <div class="video-container">
+                            <video class="background-video" controls autoplay muted loop>
+                                <source src="img/highway-loop.mp4" type="video/mp4">
+                                Your browser does not support the video tag.
+                            </video>
+                            <div class="video-overlay">
+                                <div class="text">
+                                    <p>Video Presentation</p>
+                                    <h3>Sed et risus ac sapien congue mattis.</h3>
+                                    <button class="play-button">▶</button>
+                                </div>
+                            </div>
+                        </div>
+                  
+
+                        <div class="Pricing-tables">
+                            <p>Pricing Tables</p>
+                            <h2>Duis molestie ipsum id 
+                             faucibus <br> fermentum </h2>
+                        </div>
+
+                            <div class="pricing-table">
+                                <div class="pricing-card">
+                                    <h3>Starter Plan</h3>
+                                    <p class="price">$25 <span>/monthly</span></p>
+                                    <ul>
+                                        <li>100 Suspendisse dapibus</li>
+                                        <li>10x Paleo celiac enamel</li>
+                                        <li>Williamsburg organic post ironic</li>
+                                        <li>Helvetica pinterest yuccie</li>
+                                        <li>Plaid shabby chic godard</li>
+                                    </ul>
+                                    <button>Buy It Now</button>
+                                </div>
+                                <div class="pricing-card">
+                                    <h3>Premium Plan</h3>
+                                    <p class="price">$45 <span>/monthly</span></p>
+                                    <ul>
+                                        <li>200 Suspendisse dapibus</li>
+                                        <li>20x Paleo celiac enamel</li>
+                                        <li>Williamsburg organic post ironic</li>
+                                        <li>Helvetica pinterest yuccie</li>
+                                        <li>Plaid shabby chic godard</li>
+                                    </ul>
+                                    <button>Buy It Now</button>
+                                </div>
+                                <div class="pricing-card">
+                                    <h3>Advanced Plan</h3>
+                                    <p class="price">$85 <span>/monthly</span></p>
+                                    <ul>
+                                        <li>400 Suspendisse dapibus</li>
+                                        <li>40x Paleo celiac enamel</li>
+                                        <li>Williamsburg organic post ironic</li>
+                                        <li>Helvetica pinterest yuccie</li>
+                                        <li>Plaid shabby chic godard</li>
+                                    </ul>
+                                    <button>Buy It Now</button>
+                                </div>
+                            </div>
+                        <div>
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1981.2938225396947!2d-1.621066158197189!3d6.697883538194015!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xfdb96f349e85efd%3A0xb8d1e0b88af1f0f5!2sKumasi%20Central%20Market!5e0!3m2!1sen!2sin!4v1722321584154!5m2!1sen!2sin" width="1510" height="550" style="border:0 ;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                        </div>
+                      
+                        <div class="contact">
+                            <p>Contact Us</p>
+                            <h2>Vivamus nec vehicula felis </h2></div>
+                         <div>
+                            <button class="contact1">Talk to us</button></div>
+                        <hr>
+
+
+                        <div class="footer">
+                       <div class="v-imgtext">
+                     <div class="v-img"><img src="img/footer_logo.png"alt="Image"></div>
+                       <p>Mauris sit amet quam congue, pulvinar urna et,
+                         congue diam. Suspendisse eu lorem massa.
+                          Integer sit amet posuere tellus, id efficitur leo. 
+                        In hac habitasse platea dictumst.</p>
+
+                    <div class="img-icons">  <i class="fa-brands fa-facebook" style="color: #a7aaa9;"></i>
+                        <i class="fa-brands fa-twitter" style= "color:#a7aaa9;"></i>
+                        <i class="fa-brands fa-linkedin" style="color: #a7aaa9;"></i>
+                        <i class="fa-brands fa-google" style="color: #a7aaa9;"></i>
+                        <i class="fa-brands fa-line" style="color: #a7aaa9;"></i> </div>
+                    
+                    </div>
+                
+                        <div class="bottom-text1">
+                       <h4>Useful Links</h4>
+                    <ul>
+                        <li>Help FAQs </li>
+                        <li>Register</li> 
+                        <li>Login</li>      
+                        <li>My Profile</li>      
+                        <li>How It Works?</li>      
+                        <li>More About Us</li>      
+                        <li>Our Clients</li>      
+                        <li>Partnerships</li>      
+                        <li>Blog Entries</li>      
+                        <li>Contact Us </li>      
+                    </ul>
+                
+                </div>
+
+             <div class="bottom-text2">
+             <h4>Contact Information</h4>
+            <p>Praesent iaculis gravida elementum.
+                 Proin fermentum neque facilisis semper pharetra.
+                 Sed vestibulum vehicula tincidunt.</p>
+                <div class="bottom-text3">
+            <p><h4>Phone:</h4>010-050-0550</p>
+            <p><h4>Email:</h4>hi@company.co</p>
+            <p><h4>Address:</h4>company.co</p>
+
+                </div>
+
+
+             </div>
+
+             </div>
+            
+             <div class="footer1">
+
+                   <p><h5>Copyright © 2018 Company Name - Design:</h5>Template Mo</p>
+                  </div>
+
+                
+                
+
+
+
+</body>
+
+</html>
